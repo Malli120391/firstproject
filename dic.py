@@ -1,0 +1,23 @@
+student_info=[
+    {
+        "Name":"Ram",
+        "roll_no":10,
+        "age":20,
+        "course":"python"
+    },
+    {
+        "Name":"Mohan",
+        "roll_no":20,
+        "age":22,
+        "course":"Java",
+    }
+]
+def add_new_stnd(name,rollno,age,course_option):
+    new_student={}
+    new_student["Name"]=name
+    new_student["roll_no"]=rollno
+    new_student["age"]=age
+    new_student["course"]=course_option
+    student_info.append(new_student)
+add_new_stnd("Hara",22,18,"Mysql")
+print(student_info)
